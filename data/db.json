@@ -1,0 +1,38 @@
+{
+    "categories": [
+    {
+    "name": "Israa",
+    "display_name": "Israa Othman",
+    "description": "Student",
+    "_id": 6
+    },
+    {
+    "name": "Bushra",
+    "display_name": "Bushra Belal",
+    "description": "Student",
+    "_id": 7
+    },
+    {
+    "name": "raghad",
+    "display_name": "Raghad Amjad",
+    "description": "student",
+    "_id": 8
+    }
+    ],
+    "products": [
+    {
+    "category": "developer",
+    "name": "raghad",
+    "display_name": "Raghad Al-Quran",
+    "description": "Student",
+    "_id": 1
+    },
+    {
+    "category": "developer",
+    "name": "israa",
+    "display_name": "Israa Othman",
+    "description": "Student",
+    "_id": 2
+    }
+    ]
+    }
