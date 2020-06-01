@@ -1,0 +1,395 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+      "description" : "myFirstTryOnSwagger",
+      "version" : "0.1",
+      "title" : "api-server"
+    },
+    "paths" : {
+      "/categories/5" : {
+        "get" : {
+          "produces" : [ "application/json" ],
+          "parameters" : [ ],
+          "responses" : {
+            "404" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model11"
+              }
+            }
+          }
+        },
+        "delete" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "in" : "body",
+            "name" : "body",
+            "required" : false,
+            "schema" : {
+              "$ref" : "#/definitions/Model1"
+            },
+            "x-examples" : {
+              "application/json" : " {\n        \"name\": \"sara\",\n        \"display_name\": \"sara amjad\",\n        \"description\": \"student\"\n\n    }"
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model10"
+              }
+            }
+          }
+        }
+      },
+      "/categories/8" : {
+        "put" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "in" : "body",
+            "name" : "body",
+            "required" : false,
+            "schema" : {
+              "$ref" : "#/definitions/Model0"
+            },
+            "x-examples" : {
+              "application/json" : "  {\n        \"name\": \"raghad\",\n        \"display_name\": \"Raghad Amjad\",\n        \"description\": \"student\",\n        \"_id\": 8\n    }"
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model13"
+              }
+            }
+          }
+        }
+      },
+      "/products" : {
+        "get" : {
+          "produces" : [ "application/json" ],
+          "parameters" : [ ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model16"
+              }
+            }
+          }
+        },
+        "post" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "in" : "body",
+            "name" : "body",
+            "required" : false,
+            "schema" : {
+              "$ref" : "#/definitions/Model2"
+            },
+            "x-examples" : {
+              "application/json" : "\n       {\n      \"category\": \"developer\",\n      \"name\": \"israa\",\n      \"display_name\": \"Israa Othman\",\n      \"description\": \"Student\"\n    }\n"
+            }
+          } ],
+          "responses" : {
+            "201" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model15"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions" : {
+      "Model0" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model1" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Model2" : {
+        "properties" : {
+          "category" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Model3" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Array" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model4" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/definitions/Array"
+        }
+      },
+      "Model5" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model6" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model7" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model8" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model9_Array" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model9" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/definitions/Model9_Array"
+        }
+      },
+      "Model10" : { },
+      "Model11" : { },
+      "Model12_Array" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model13" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model14_Array" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model14" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/definitions/Model14_Array"
+        }
+      },
+      "Model15" : {
+        "properties" : {
+          "category" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model16_Array" : {
+        "properties" : {
+          "category" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "_id" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model16" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/definitions/Model16_Array"
+        }
+      }
+    }
+  }
